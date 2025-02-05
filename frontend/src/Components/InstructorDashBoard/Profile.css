@@ -1,0 +1,105 @@
+
+
+h1, h2 {
+    color: #333;
+}
+
+/* Profile Info Styles */
+.profile-info {
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info h2 {
+    margin-bottom: 15px;
+}
+
+.profile-info p {
+    margin: 10px 0;
+    display: flex; /* Flexbox for icon alignment */
+    align-items: center; /* Center icons vertically */
+}
+
+.profile-info p strong {
+    margin-left: 10px; /* Space between icon and text */
+}
+
+/* Change Password Section */
+.change-password {
+    margin-top: 20px;
+}
+
+.change-password h2 {
+    margin-bottom: 15px;
+}
+
+/* Card Styles for OTP and Update Password */
+.otp-card,
+.update-password-card {
+    background-color: #fff; /* White background for cards */
+    border-radius: 8px;
+    padding: 20px;
+    justify-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 10px; /* Space between cards */
+}
+
+.otp-verification-form,
+.update-password-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.otp-verification-form input,
+.update-password-card input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.otp-verification-form input:focus,
+.update-password-card input:focus {
+    border-color: #007bff; /* Change border color on focus */
+}
+
+.change-password button,
+.send-otp-button {
+   background-color: #007bff; /* Button color */
+   color: white; /* Text color */
+   border: none; /* No border */
+   padding: 10px; /* Padding */
+   border-radius: 5px; /* Rounded corners */
+   cursor: pointer; /* Pointer cursor on hover */
+   transition: background-color 0.3s, transform 0.2s; /* Transition for button hover */
+}
+
+.change-password button:hover,
+.send-otp-button:hover {
+   background-color: #0056b3; /* Darker blue on hover */
+   transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Loading State */
+.loading {
+   font-size: 18px;
+   color: #007bff; 
+   text-align:center; 
+   margin-top:20px; 
+}
+
+/* Modal Styles (if needed in the future) */
+/* Add modal styles here if you plan to implement a modal in the future */
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+   .profile-info,
+   .change-password,
+   .otp-card,
+   .update-password-card {
+       padding: 15px;
+       margin-top: 5px;
+   }
+}
